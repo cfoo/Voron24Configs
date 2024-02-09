@@ -72,7 +72,7 @@ push_config(){
   git pull origin master
   git add .
   current_date=$(date +"%Y-%m-%d %T")
-  git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  git commit -m "Autocommit from $HOSTNAME on $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
   git push origin master
 }
 
