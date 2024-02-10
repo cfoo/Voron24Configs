@@ -69,6 +69,7 @@ grab_version(){
 
 push_config(){
   cd $config_folder
+  rm -f printer-20*.cfg
   git pull origin master
   git add .
   current_date=$(date +"%Y-%m-%d %T")
