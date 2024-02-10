@@ -69,6 +69,7 @@ grab_version(){
 
 push_config(){
   cd $config_folder
+  # as there is no way to disable this, remove stupid klipper backup files
   rm -f printer-20*.cfg
   git pull origin master
   git add .
