@@ -71,11 +71,11 @@ push_config(){
   cd $config_folder
   # as there is no way to disable this, remove stupid klipper backup files
   rm -f printer-20*.cfg
-  git pull origin master
+  git pull origin main
   git add .
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $HOSTNAME on $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git push origin master
+  git push origin main
 }
 
 grab_version
