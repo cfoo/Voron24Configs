@@ -12,6 +12,8 @@
 
 [include mcu/pi.cfg]
 
+[include mcu/ercf.cfg]
+
 ##--------------------------------------------------------------------
 # devices attached to the printer
 # LCD menu
@@ -25,11 +27,6 @@
 
 # Klicky Probe for G32
 [include devices/pcbklicky.cfg]
-
-# ERCF V2
-[include mmu/base/*.cfg]
-[include mmu/optional/client_macros.cfg]
-[include mmu/optional/mmu_menu.cfg]
 
 ##--------------------------------------------------------------------
 # extra macros and settings
