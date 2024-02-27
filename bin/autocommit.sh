@@ -70,7 +70,7 @@ grab_version(){
 push_config(){
   cd $config_folder
   # as there is no way to disable this, remove stupid klipper backup files
-  rm -f printer-20*.cfg
+  rm -f printer-20*
   git pull origin main
   git add .
   current_date=$(date +"%Y-%m-%d %T")
