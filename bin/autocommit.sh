@@ -74,11 +74,11 @@ push_config(){
   git pull origin main
   git add .
   current_date=$(date +"%Y-%m-%d %T")
-  git commit -m "Autocommit from $HOSTNAME on $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
+  git commit -m "Autocommit $1 from $HOSTNAME on $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
   git push origin main
 }
 
 grab_version
-push_config
+push_config $1
 
 
