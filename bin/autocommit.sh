@@ -79,6 +79,6 @@ push_config(){
 }
 
 grab_version
-push_config $1
+push_config "$1"
 
 
